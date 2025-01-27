@@ -4,8 +4,8 @@ import json
 import streamlit as st
 from io import StringIO
 
-URL_DATES_AVAILABLES = "http://127.0.0.1:5000/availabledates"
-URL_GET_DATAFRAME_BYDATE = "http://127.0.0.1:5000/getDatabaseByDates/"
+URL_DATES_AVAILABLES = "https://api-process-esp32.onrender.com/availabledates"
+URL_GET_DATAFRAME_BYDATE = "https://api-process-esp32.onrender.com/getDatabaseByDates/"
 
 
 @st.cache_data
