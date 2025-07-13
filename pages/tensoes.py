@@ -6,17 +6,10 @@ import plotly.express as px
 from interface_requests_API import get_datesAvailables, get_dataframe_from_selectDate
 from utils.gerenciamento_dataframes import json2dataframe, seriesTensoes
 
-st.set_page_config(layout="wide")
-
-
-paginas = {
-    "SUA CONTA": [
-        st.Page("login.py", title="Login"),
-        st.Page("main.py", title="Gerenciamento de conta"),
-    ],
-}
-pg = st.navigation(paginas)
-pg.run()
+st.set_page_config(page_title='DASH BOARD',
+                   layout="wide",
+                   initial_sidebar_state='collapsed',
+                   )
 
 
 # configurando a sidebar
